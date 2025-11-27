@@ -155,6 +155,7 @@ img {
 	.info {
 		text-align: left;
 		border-spacing: 0;
+		margin:auto;
 	}
 
 	.info th,

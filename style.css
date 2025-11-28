@@ -7,6 +7,7 @@ html {
 	font-family: "Hiragino Sans", "Meiryo";
 	line-height: 1.7;
 	color: #432;
+	background-color: #FFFFE7;
 }
 
 a {
@@ -21,26 +22,64 @@ img {
 .page-header,
 .profile,
 .skills,
-.works {
-	text-align: center;	
+.works,
+.contact {
+	text-align: center;
+}
+
+.page-header {
+	font-size: 25px;
 }
 
 .wrapper {
 	max-width: 1120px;  /* 最大幅の指定 */
-	margin: auto;  /* 要素の外側の余白(ボックスを画面中央にする) */
+	width: 70%;
+	margin: 0 auto;   /* 要素の外側の余白(ボックスを画面中央にする) */
+	
 }
 
 .wrapper h1 {
 	margin-top: 8rem;
+	font-size: 40px;
 }
 
 .wrapper h2 {
 	margin-top: 3rem;
 }
 
+form {
+	display: inline-block;
+	margin: 0 0 0 120px;
+	align-items: center;
+}
+
+form label {
+	display: inline-block;
+    text-align: right;
+    width: 150px;
+	vertical-align: top;
+}
+
+input,
+textarea {
+	width: 400px;
+	background-color: #FFFFE9;
+	border-width: 0.5px;
+}
+
+textarea {
+	resize: vertical;
+    height: 120px;
+}
+
+button {
+	width: 80px;
+	margin: 0 0 0 160px;
+}
+
 .hobby_photo {
 	display: flex;
-	gap: 2rem;
+	gap: 5rem;
 }
 
 /* ヘッダー */
@@ -66,19 +105,6 @@ img {
 	background-image: url(images/leaves.webp);
 }
 
-/* Contact */
-/*.email {*/
-/*	max-width: 916px;*/
-/*	background-color: #faf7f0;*/
-/*	border-radius: 48px;*/
-/*	padding: 1.5rem 2.5rem 2.5rem;*/
-/*	margin: 0 auto 2rem;*/
-/*}*/
-
-/*.email p {*/
-/*	margin: 1rem 0 2rem;*/
-/*}*/
-
 /* フッター*/
 .page-footer {
 	background-size: cover;  /* 画面いっぱいの指定 */
@@ -89,9 +115,9 @@ img {
 
 .page-footer th,
 .page-footer td {
-	border-bottom: 2px solid #ccc;
+	border-bottom: 2px solid #cccc99;
 	text-align: left;
-	padding: 2rem 0;
+	padding: 15px 0;
 }
 
 .page-footer th {
@@ -99,8 +125,8 @@ img {
 	width: 200px;
 }
 
-.page-footer td {
-	padding: 2rem 0;
+.page-footer h2 {
+	font-size: 35px;
 }
 
 .info {
@@ -160,7 +186,7 @@ img {
 
 	.info th,
 	.info td {
-		border-bottom: 2px solid #ccc;
+		border-bottom: 2px solid #cccc99;
 	}
 
 	.copyright {
